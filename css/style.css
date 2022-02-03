@@ -1,0 +1,180 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #6c757d;
+}
+/* Add a black background color to the top navigation */
+.menu {
+    background-color: rgb(80, 80, 80);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .menu a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  /* Change the color of links on hover */
+  .menu a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .menu a.active {
+    background-color: #0489aa;
+    color: #f2f2f2;
+    font-weight: bolder;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .menu .icon {
+    display: none;
+  }
+
+  #myMenu{
+    text-align: center;
+  }
+
+
+
+  /***************DARK MODE**********************/
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+
+  /******************************** SIDE NAV ********************************/
+
+  /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-image: url(../img/pexels-donald-tong-325649.jpg);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 100px; /* Place content 60px from the top */
+  transition: 1s; /* 1 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 10px 10px 10px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-weight: bolder;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: transparent;
+  transform: scale(1.4);
+  color: white;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  top: 0;
+  right: 80px;
+  font-size: 100px;
+  color: red;
+}
+.sidenav .closebtn:hover{
+  color: red;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/*******************JEUX 1 & 2 ************************/
+
+#maDivGauche{
+  border-right: 2px solid rgb(80, 80, 80);
+}
+#btnJeu{
+  background-image: url(../img/pexels-robert-gruszecki-9956995.jpg);
+  width: 320px;
+  height: 320px;
+  border-radius: 100px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+}
+#btnJeu:hover{
+  color:wheat;
+  transform: scale(1.1);
+  cursor: grabbing;
+}
+
+
+#maDivDroite{
+  border-left: 2px solid  #0489aa;
+}
+#myCanvas{
+  background-image: url(../img/pexels-pixabay-39561.jpg);
+  background-size: cover;
+  border: 2px solid purple;
+}
+
+
+
+
+/*******************TO DO LIST************************/
+#part2DivGauche{
+  border-right: 2px solid rgb(80, 80, 80);
+  margin-top: 50px;
+}
+
+#part2DivDroite{
+  border-left: 2px solid  #0489aa;
+  margin-top: 50px;
+}
+li{
+  list-style-type: decimal;
+  list-style-position: inside;
+  color: #0489aa;
+  padding: 5px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px black;
+}
+h1{
+  text-shadow: 1px 1px 3px black;
+  font-size: 70px;
+}
+h2{
+  text-shadow: 1px 1px 3px black;
+  font-size: 35px;
+  
+}
+
+
+#video-fond-1{
+  border: 2px solid rgb(185, 185, 185);
+}

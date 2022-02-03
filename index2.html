@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="metaDatas">
+   
+  <!----------------javascript---------------->
+   
+    <title>Entraînement JAVASCRIPT</title>
+</head>
+
+
+<body>
+
+  <!-----------------------------H1------------------------->
+<h1 class="text-center my-5 text-white">ENTRAINEMENT JAVASCRIPT</h1>
+
+
+<!------------------------------NAV BAR-------------------------->
+    <div id="myMenu" class="menu">
+
+        <a href="#"><i class="fa fa-home" onclick="openNav()"></i></a>
+        <a href="#" class="active">Home</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#" class="icon" onclick="menuBurger()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#"><i class="fa fa-toggle-off" id="toggleIcon" title="Dark Mode on/off" onclick="DarkLightMode()"></i></a>
+
+
+
+        <!------------------------------SIDE NAV-------------------------->
+      <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" title="close menu" onclick="closeNav()">&times</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+
+    </div>      
+
+
+      <!-----------------------------JEU 1 "deviner un chiffre" ------------------------->
+<div class="container-fluid mt-5">
+
+<div class="row text-center w-100">
+
+    <div id="maDivGauche" class="col-lg-6 col-sm-12 text-white mt-5">
+
+      <h2> &#10086 Jeu n°1 - Devinez un chiffre entre 0 et 10 &#10086</h2>
+      
+      <button id="btnJeu" class="btn btn-outline-info mt-5" onclick="findTheNumber()">JOUER</button>    
+      
+    </div>
+
+     <!-----------------------------JEU 2 "casse brique" ------------------------->
+    <div id="maDivDroite" class="col-lg-6 col-sm-12 text-white mt-5">
+      <h2> &#10028 Jeu n°2 - Le Casse Brique! &#10028</h2>
+      <canvas id="myCanvas" width="540" height="380" class="mt-3"></canvas>
+      
+    </div>
+
+</div>
+</div>
+
+
+
+
+<!-----------------------------PART 2 ------------------------->
+
+<div class=" row mt-5 border-top">
+
+
+
+  <!-----------------------------PART GAUCHE - TO DO LIST ------------------------->
+  <div id="part2DivGauche" class="col-lg-6 col-sm-12 text-center">
+  <h2 class="mt-5 text-white"> &#10024 THE To Do List &#10024</h2>
+
+  <input type="text" id="input-ajout-tache" class="px-5 py-2 rounded mt-3">
+  <br>
+  <button onclick="nouvelleTache()" class="btn-ajout mt-3 py-1 rounded">Ajouter une tâche</button>
+
+  <ol id="taches-liste" class="menu-liste text-center">
+  </ol>
+</div>
+
+
+
+<!-----------------------------PART DROITE - VIDEO ------------------------->
+
+<div id="part2DivDroite" class="col-lg-6 col-sm-12 text-center">
+
+  <h2 class="mt-5 text-white"> &#10024 Une vidéo... &#10024</h2>
+<video id="video-fond-1" autoplay="autoplay" muted="muted" loop="loop" class="w-75 mt-3">
+  <source src="img/Pexels Videos 2759477.mp4" type="video/mp4">
+</video>
+</div>
+
+</div>
+
+
+      <!-----------------------JAVASCRIPT------------------------>
+      <script src="js/Head.js"></script>
+      <script src="js/Nav.js"></script>
+      <script src="js/Jeux1-2.js"></script>
+      <script src="js/ToDoList.js"></script>
+    
+</body>
+</html>

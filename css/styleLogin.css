@@ -1,0 +1,56 @@
+html, body{
+    margin: 0;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: grey;
+}
+
+.form-element{
+    margin: 20px;
+}
+
+:placeholder-shown{
+    padding: 2px 10px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 70%;
+}
+
+.connexion{
+    font-size: 50px;
+}
+
+.label{
+    color: wheat;
+    display: block;
+    font-size: 25px;
+}
+
+
+.error{
+    color: red;
+    text-shadow: 2px 1px 3px black;
+    font-weight: bold;
+    animation: failed 3s infinite;
+}
+@keyframes failed{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+.loader {
+    margin: auto;
+    border: 16px solid #dddddd; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: spin 3s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
