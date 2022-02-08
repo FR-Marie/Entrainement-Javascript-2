@@ -1,6 +1,6 @@
 // FONCTION déclenchée au clic sur le bouton "AJOUTER UNE TACHE"
 
-function nouvelleTache(){
+function nouvelleTache() {
     //Récupérer la liste HTML ol
     const listeParent = document.getElementById("taches-liste");
 
@@ -18,9 +18,9 @@ function nouvelleTache(){
 
 
     //Vérifier que le champ n'est pas vide
-    if(inputValue === ""){
+    if (inputValue === "") {
         alert("merci de remplir le champ")
-    }else{
+    } else {
         listeParent.appendChild(li);
     }
 
@@ -33,17 +33,32 @@ function nouvelleTache(){
     let span = document.createElement("span");
 
     //Dans chaque span on ajoute un noeud texte avec croix (X)
-    let croix = document.createTextNode(" X ");
+    let croix = document.createTextNode(" x ");
+    
 
     //Ajout du noeud texte à la span
     span.appendChild(croix);
-    span.className = " X ";
+    span.className = "supprimer";
 
     //Ajout chaque span à <li>
     li.appendChild(span);
 
 
     //Supprimer une tache
+    //Recuper les elements span qui on la classe supprimer ['supprimer']
+    let btnSupprimer = document.getElementsByClassName("supprimer");
 
-    
+    //Boucle de parcours de toutes les span qui on la classe supprimer <span class="supprimer">
+    let i;
+    //3 paramètres i = 0; i est < a la longueur du tableau <span class="supprimer"; i += 1
+    for(i = 0; i < btnSupprimer.length; i++){
+        //Au clic sur chaque span = on declenche une fonction anonyme
+        btnSupprimer[i].onclick = function (){
+            //let spanParentLI = btnSupprimer[i].parentElement;
+            //On recupere les <li> parent de <span class="supprimer">
+            let spanParentLI = this.parentElement;
+            spanParentLI.style.display = "none";
+        }
+    }
+
 }
